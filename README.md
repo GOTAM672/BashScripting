@@ -8,11 +8,15 @@ It a process by which we can complete any task with intervention or without huma
 
 ## what is shell scripting 
 Shell scripting is a group of commands written in a sequence to automate.
-### To know all the available shell in your OS rub given command in terminal.
+### To know all the available shell in your OS run given command in terminal.
 ```bash
 cat /etc/shells
 ```
 
+## How to automate tasks.
+step1: Get all commands wants to run in correct order.
+step2: Write it in shell script file example "xyz.sh"
+step3: Now execute "xyz.sh" script
 
 
 
