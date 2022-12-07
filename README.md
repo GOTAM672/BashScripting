@@ -14,9 +14,9 @@ cat /etc/shells
 ```
 
 ## How to automate tasks.
-step1: Get all commands wants to run in correct order.
-step2: Write it in shell script file example "xyz.sh"
-step3: Now execute "xyz.sh" script
+step1: Get all commands wants to run in correct order.<br>
+step2: Write it in shell script file example "xyz.sh".<br> 
+step3: Now execute "xyz.sh" script.<br>
 
 
 
