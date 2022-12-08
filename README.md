@@ -19,4 +19,21 @@ step2: Write it in shell script file example "xyz.sh".<br>
 step3: Now execute "xyz.sh" script.<br>
 
 
+## Hello, World script
+
+1. Create a file named hello.sh
+2. Write commands wants to execute inside hello.sh
+3. Every bash shell script file start with #! [location of your bash]
+```bash
+#! /bin/bash
+
+echo "Hello, world"
+```
+4. Then execute it.
+5. If your terminal shows message "Permission denied", then you need to give file hello.sh to executable permission by running command <br>
+```bash 
+chmod +x hello.sh
+```
+
+
 
