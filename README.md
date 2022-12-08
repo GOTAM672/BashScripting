@@ -48,6 +48,20 @@ You can comment any perticular line by starting '#' symbol. Example <br>
 echo "Hello, World"
 ```
 
+There are two type of variables in scripting, System variables & User defined variables.
 
+### System Variables
+```bash
+#! /bin/bash
+
+# This is a comment.
+echo "Hello, World"
+
+# following are some system variables.
+echo $BASH   
+echo $BASH_VERSION
+echo $HOME
+echo $PWD
+```
 
 
