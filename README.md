@@ -38,5 +38,16 @@ echo "Hello, world"
 chmod +x hello.sh
 ```
 
+## Comments & Variables
+
+You can comment any perticular line by starting '#' symbol. Example <br>
+```bash
+#! /bin/bash
+
+# This is a comment.
+echo "Hello, World"
+```
+
+
 
 
