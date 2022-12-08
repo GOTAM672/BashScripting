@@ -29,7 +29,10 @@ step3: Now execute "xyz.sh" script.<br>
 
 echo "Hello, world"
 ```
-4. Then execute it.
+4. Then execute it by running command <br>
+```bash
+./hello.sh
+```
 5. If your terminal shows message "Permission denied", then you need to give file hello.sh to executable permission by running command <br>
 ```bash 
 chmod +x hello.sh
