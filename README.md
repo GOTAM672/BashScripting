@@ -109,3 +109,20 @@ read            # the input goes in built-in variable called "REPLY"
 echo "Age : $REPLY"
 
 ```
+
+## How to pass arguments to the Bash Script 
+
+
+```bash
+#! /bin/bash
+
+echo $0 $1 $2 ' > echo $1 $2'
+# for example you run the script by running the command "./hello.sh mark Tom"
+# then ./hello.sh will store in variable 0 , mark will store in variable 1, Tom will store in variable 2
+
+# We can also pass arguments into the array
+args=("$@")
+echo ${args[0]} ${args[1]} # Here in array mark will store at index 0 and Tom will store at index 1
+echo $@  # This line will print all the arguments that is store in args variables 
+echo $# # This line will print the number of arguments that is passed.
+```
