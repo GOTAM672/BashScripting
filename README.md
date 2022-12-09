@@ -63,5 +63,20 @@ echo $BASH_VERSION
 echo $HOME
 echo $PWD
 ```
+### User-defined Variables
 
+```bash
+#! /bin/bash
+
+# following are some system variables.
+echo $BASH   
+echo $BASH_VERSION
+echo $HOME
+echo $PWD
+
+# following is user-defined variable
+name=Gotam
+# 10val -> This is not valid variable 
+echo My name is $name
+```
 
