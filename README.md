@@ -133,5 +133,29 @@ echo $# # This line will print the number of arguments that is passed.
 #! /bin/bash
 
 count=10
+if [ $count -eq 10 ]
+then
+  echo "condition is true."
+fi
+
+# Integer Comparison
+# -eq -> is equal to
+# -ne -> is not equal
+# -gt -> is greater than
+# -ge -> is greater than or equal to
+# -lt -> is leass than
+# -le -> is less than or equal to
+# < -> is less than
+# > -> is greater than
+# <= -> is less than or equal to
+# >= -> is greater than or equal to 
+
+# String Comparision 
+# = -> is equal to
+# == -> is equal to
+# != -> is not equal to
+# < -> is less than
+# > -> is greater than
+# -z -> string is null
 
 ```
