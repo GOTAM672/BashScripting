@@ -160,4 +160,21 @@ fi
 
 ```
 
+## IF-ELSE statement
+
+```bash
+
+count=10
+if [ $count -eq 10 ]
+then
+  echo "count is equal to 10."
+elif [ $count -eq 9 ]
+then
+  echo "count is equal to 9"
+else
+  echo "condition is false."
+fi
+
+```
+
 
