@@ -145,17 +145,19 @@ fi
 # -ge -> is greater than or equal to
 # -lt -> is leass than
 # -le -> is less than or equal to
-# < -> is less than
-# > -> is greater than
-# <= -> is less than or equal to
-# >= -> is greater than or equal to 
+# < -> is less than (use it inside(()) ex- (( $count < 10)) )
+# > -> is greater than (use it inside(()) ex- (( $count > 10)) )
+# <= -> is less than or equal to (use it inside(()) ex- (( $count <= 10)) )
+# >= -> is greater than or equal to (use it inside(()) ex- (( $count >= 10)) )
 
 # String Comparision 
-# = -> is equal to
+# = -> is equal to 
 # == -> is equal to
 # != -> is not equal to
-# < -> is less than
-# > -> is greater than
-# -z -> string is null
+# < -> is less than (use it inside[[]] ex- [[ $string < "abc"]] )
+# > -> is greater than (use it inside[[]] ex- [[ $string > "abc"]] )
+# -z -> string is null (use it inside[[]] ex- [[ $string -z "abc"]] )
 
 ```
+
+
