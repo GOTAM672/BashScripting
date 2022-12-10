@@ -163,6 +163,7 @@ fi
 ## IF-ELSE statement
 
 ```bash
+#! /bin/bash
 
 count=10
 if [ $count -eq 10 ]
