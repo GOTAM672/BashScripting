@@ -178,4 +178,34 @@ fi
 
 ```
 
+## File Testing
+
+There are basically two types of files :
+1. Block Special File
+It is a binary file which is generally pictures , videos, music etc.
+2. Character Special File
+It is normal file which can contains some text, data or character etc.
+
+```bash
+#! /bin/bash
+
+echo -e "Enter the name of the file : \c"  # -e is use to enable the interpretation of \c which keep the cursor on the same line.
+read file_name
+
+if [ -e $file_name ]  # -e is use to check weither file is exist or not
+then
+  echo "$file_name found"
+else
+  echo "$file_name not found"
+fi
+
+# -e is use to check weither file is exist or not
+# -f is use to check weither file is exist or not and regular file
+# -d is use to check weither directory is exist or not
+# -b is use to check weither file is block special file
+# -c is use to check weither file is character special file
+
+# -s is use to check weither file is empty or not
+# -r -w -x are use to check weither file has read, write , execute permission respectively.
+```
 
