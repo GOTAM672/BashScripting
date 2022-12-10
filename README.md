@@ -126,3 +126,12 @@ echo ${args[0]} ${args[1]} # Here in array mark will store at index 0 and Tom wi
 echo $@  # This line will print all the arguments that is store in args variables 
 echo $# # This line will print the number of arguments that is passed.
 ```
+
+## If Statement
+
+```bash
+#! /bin/bash
+
+count=10
+
+```
