@@ -181,9 +181,9 @@ fi
 ## File Testing
 
 There are basically two types of files :
-1. Block Special File
+1. Block Special File<br>
 It is a binary file which is generally pictures , videos, music etc.
-2. Character Special File
+2. Character Special File<br>
 It is normal file which can contains some text, data or character etc.
 
 ```bash
