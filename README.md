@@ -229,3 +229,59 @@ else
   echo "$file_name not found"
 fi
 ```
+
+## Logical AND Operator
+
+```bash
+#! /bin/bash
+
+age=25
+
+if [ $age -gt 18 ] && [ $age -lt 30 ] # Also written as [ $age -gt 18 -a $age -lt 30 ] or [[ $age -gt 18 && $age -lt 30 ]]
+then
+  echo "Valid Age."
+else
+  echo "Age is not valid."
+fi
+
+```
+
+## Logical OR Operator
+
+```bash
+#! /bin/bash
+
+age=60
+
+if [ $age -gt 18 ] || [ $age -lt 30 ] # Also written as [ $age -gt 18 -o $age -lt 30 ] or [[ $age -gt 18 || $age -lt 30 ]]
+then
+  echo "Valid Age."
+else
+  echo "Age is not valid."
+fi
+
+```
+
+## Arithmetic Operation
+
+```bash
+#! /bin/bash
+
+num1=20
+num2=5
+
+echo $(( num1 + num2 ))
+echo $(( num1 - num2 ))
+echo $(( num1 * num2 ))
+echo $(( num1 / num2 ))
+echo $(( num1 % num2 ))
+
+# Another Method
+
+echo $(expr $num1 + $num2 )
+echo $(expr $num1 - $num2 )
+echo $(expr $num1 \* $num2 )
+echo $(expr $num1 / $num2 )
+echo $(expr $num1 % $num2 )
+
+```
