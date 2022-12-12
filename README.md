@@ -285,3 +285,27 @@ echo $(expr $num1 / $num2 )
 echo $(expr $num1 % $num2 )
 
 ```
+
+## Arithmetic Operation on floating point
+
+bc - An arbitrary precision calculator language
+
+```bash
+#! /bin/bash
+
+num1=20.5
+num2=5
+
+echo "$num1 + $num2" | bc
+echo "$num1 - $num2" | bc
+echo "$num1 * $num2" | bc
+echo "$num1 / $num2" | bc           # gives wrong answer
+echo "scale=2;$num1 / $num2" | bc   # gives correct answer
+echo "$num1 % $num2" | bc
+
+
+num=99
+echo "scale=2;sqrt($num)" | bc -l   # calling math library with bc.
+echo "scale=2;4^2" | bc -l   # 2 to the power 4
+
+```
