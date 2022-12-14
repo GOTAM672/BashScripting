@@ -20,6 +20,7 @@ Lets Begin...
 - [Logical Operator](#Logical-Operator)
 - [Arithmetic Operation](#Arithmetic-Operation)
 - [Case Statement](#Case-Statement)
+- [Array Variables](#Array-Variables)
 
 <br>
 ## What is Automation 
@@ -372,4 +373,22 @@ case $input in
     * )
         echo "Unknown input" ;;
 esac
+```
+
+## Array Variables
+
+```bash
+#! /bin/bash
+
+OS=('ubuntu' 'Arch' 'window')
+echo "${OS[@]}"    # print all the elements of array OS
+echo "${!OS[@]}"   # prints the indexes of the array
+echo "${#OS[@]}"   # prints the of the array
+
+echo "${OS[0]} ${OS[1]} ${OS[2]}"
+
+OS[3]='mac'        # add 4th element to the array
+OS[7]='kali'       # It's possible
+unset OS[2]        # remove element at index 2
+
 ```
