@@ -27,6 +27,7 @@ It a process by which we can complete any task with intervention or without huma
 
 ## What is shell scripting 
 Shell scripting is a group of commands written in a sequence to automate.
+
 ## Available shell in your OS
 Run command
 
@@ -89,12 +90,6 @@ echo $PWD
 ```bash
 #! /bin/bash
 
-# following are some system variables.
-echo $BASH   
-echo $BASH_VERSION
-echo $HOME
-echo $PWD
-
 # following is user-defined variable
 name=Gotam
 # 10val -> This is not a valid variable 
@@ -113,7 +108,7 @@ echo "You entered the name : $Name"
 
 # To read the user input on same line
 read -p 'username : ' user_name
-echo "username : $user_var"
+echo "username : $user_name"
 
 # To hide the user input (example password)
 read -sp 'password : ' user_pass
@@ -337,6 +332,8 @@ echo "scale=2;4^2" | bc -l   # 2 to the power 4
 
 ## Case Statement
 
+Example 1
+
 ```bash
 #! /bin/bash
 
@@ -353,5 +350,26 @@ case $vehicle in
         echo "Rent of $vehicle is 150 dollar" ;;
     * )
         echo "Unknown Vehicle" ;;
+esac
+```
+Example 2
+
+```bash
+#! /bin/bash
+
+echo -e "Enter some character : \c"
+read input
+
+case $input in
+    [a-z] )
+        echo "user entered $input from a to z" ;;
+    [A-Z] )
+        echo "user entered $input from A to Z" ;;
+    [0-9] )
+        echo "user entered $input from 0 to 9" ;;
+    ? )
+        echo "user entered $input - a special character" ;;
+    * )
+        echo "Unknown input" ;;
 esac
 ```
