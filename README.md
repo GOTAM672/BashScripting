@@ -9,14 +9,23 @@ Lets Begin...
 - [what is Automation](#what-is-Automation)
 - [what is shell scripting](#what-is-shell-scripting)
 - [Available shell in your OS](#available-shell-in-your-OS)
-
+- [How to automate tasks](#How-to-automate-tasks)
+- [Hello World script](#Hello-World-script)
+- [Comments & Variables](#Comments-&-Variables)
+- [Read User Input](#Read-User-Input)
+- [How to pass arguments to the Bash Script](#How-to-pass-arguments-to-the-Bash-Script)
+- [If Statement](#If-Statement)
+- [IF-ELSE statement](#IF-ELSE-statement)
+- [File Testing](#File-Testing)
+- [Logical Operator](#Logical-Operator)
+- [Arithmetic Operation](#Arithmetic-Operation)
+- [Case Statement](#Case-Statement)
 
 <br>
-
-## what is Automation 
+## What is Automation 
 It a process by which we can complete any task with intervention or without human intervention.
 
-## what is shell scripting 
+## What is shell scripting 
 Shell scripting is a group of commands written in a sequence to automate.
 ## Available shell in your OS
 Run command
@@ -25,13 +34,13 @@ Run command
 cat /etc/shells
 ```
 
-## How to automate tasks.
+## How to automate tasks
 step1: Get all commands wants to run in correct order.<br>
 step2: Write it in shell script file example "xyz.sh".<br> 
 step3: Now execute "xyz.sh" script.<br>
 
 
-## Hello, World script
+## Hello World script
 
 1. Create a file named hello.sh
 2. Write commands wants to execute inside hello.sh
@@ -242,7 +251,9 @@ else
 fi
 ```
 
-## Logical AND Operator
+## Logical Operator
+
+### AND
 
 ```bash
 #! /bin/bash
@@ -258,7 +269,7 @@ fi
 
 ```
 
-## Logical OR Operator
+### OR
 
 ```bash
 #! /bin/bash
@@ -276,6 +287,8 @@ fi
 
 ## Arithmetic Operation
 
+
+### On integer
 ```bash
 #! /bin/bash
 
@@ -298,7 +311,7 @@ echo $(expr $num1 % $num2 )
 
 ```
 
-## Arithmetic Operation on floating point
+### On floating point
 
 bc - An arbitrary precision calculator language
 
