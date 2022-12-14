@@ -309,3 +309,24 @@ echo "scale=2;sqrt($num)" | bc -l   # calling math library with bc.
 echo "scale=2;4^2" | bc -l   # 2 to the power 4
 
 ```
+
+## Case Statement
+
+```bash
+#! /bin/bash
+
+vehicle=$1   #argument receive from command line will store in vehicle
+
+case $vehicle in
+    "car" )
+        echo "Rent of $vehicle is 100 dollar" ;;
+    "van" )
+        echo "Rent of $vehicle is 80 dollar" ;;
+    "bicycle" )
+        echo "Rent of $vehicle is 5 dollar" ;;
+    "truck" )
+        echo "Rent of $vehicle is 150 dollar" ;;
+    * )
+        echo "Unknown Vehicle" ;;
+esac
+```
