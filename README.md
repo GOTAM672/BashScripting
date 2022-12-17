@@ -395,6 +395,7 @@ unset OS[2]        # remove element at index 2
 ```
 
 ## While Loop
+
 Example: Print 1 to 10
 ```bash
 #! /bin/bash
@@ -404,7 +405,50 @@ n=1
 while [ $n -le 10 ]
 do
    echo "$n"
-   n=$(( n+1 ))
+   n=$(( n+1 ))   # or (( n++ )) 
+   sleep 1        # It will print the number with one second delay.
 done
+
+```
+
+Example: open 3 terminal using Bash Script
+
+```bash
+#! /bin/bash
+
+n=1
+
+while [ $n -le 3 ]
+do
+   echo "$n"
+   n=$(( n+1 ))   # or (( n++ )) 
+   gnome-terminal &
+   sleep 2        # It will print the number with two second delay.
+done
+
+```
+Example: Read file content
+
+```bash
+#! /bin/bash
+
+while read f
+do
+   echo $f
+done < hello.sh 
+
+# Another Method
+
+cat hello.sh | while read f
+do
+   echo $f
+done
+
+# Another Method
+
+while IFS= read -r file
+do
+   echo $file
+done < hello.sh
 
 ```
