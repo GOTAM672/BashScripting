@@ -21,6 +21,7 @@ Lets Begin...
 - [Arithmetic Operation](#Arithmetic-Operation)
 - [Case Statement](#Case-Statement)
 - [Array Variables](#Array-Variables)
+- [While Loop](#While-Loop)
 
 <br>
 ## What is Automation 
@@ -390,5 +391,20 @@ echo "${OS[0]} ${OS[1]} ${OS[2]}"
 OS[3]='mac'        # add 4th element to the array
 OS[7]='kali'       # It's possible
 unset OS[2]        # remove element at index 2
+
+```
+
+## While Loop
+Example: Print 1 to 10
+```bash
+#! /bin/bash
+
+n=1
+
+while [ $n -le 10 ]
+do
+   echo "$n"
+   n=$(( n+1 ))
+done
 
 ```
