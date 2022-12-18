@@ -22,6 +22,8 @@ Lets Begin...
 - [Case Statement](#Case-Statement)
 - [Array Variables](#Array-Variables)
 - [Loops](#Loops)
+- [Break and Continue](#Break-and-Continue)
+
 
 
 ## What is Automation 
@@ -597,6 +599,40 @@ It is similar to For Loop, it gives menu list to user to select.
 select name in gautam suman himanshu anshu
 do
     echo "$name selected"
+done
+
+```
+
+## Break and Continue
+
+Break Keyword
+
+```bash
+#! /bin/bash
+
+for (( i=0; i<10; i++ ))
+do
+    if [ $i -gt 5 ]
+    then
+      break
+    fi
+    echo $i
+done
+
+```
+
+Continue Keyword
+
+```bash
+#! /bin/bash
+
+for (( i=0; i<10; i++ ))
+do
+    if [ $i -eq 5 -0 $i -eq 9 ]
+    then
+      continue
+    fi
+    echo $i
 done
 
 ```
