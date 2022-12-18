@@ -519,7 +519,7 @@ done
 
 ```
 
-Examples 
+Simple Examples 
 
 ```bash
 #! /bin/bash
@@ -554,9 +554,34 @@ done
 ```bash
 #! /bin/bash
 
-for i in {1..10..1 }     # Iterate number 1 to 10 and increase the variable by 2 : {START..END..INCREMENT}
+for i in {1..10..1 }  # Iterate number 1 to 10 and increase the variable by 2 : {START..END..INCREMENT}
 do
     echo $i
+done
+
+```
+Usefull Example
+
+```bash
+#! /bin/bash
+
+for command in ls pwd date
+do
+    echo "----------$command--------------"
+    $command
+done
+
+```
+
+```bash
+#! /bin/bash
+
+for item in *
+do
+    if [ -d $item ] # To chech weither item is directory or not
+    then
+      echo $item
+    fi
 done
 
 ```
