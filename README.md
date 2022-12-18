@@ -23,7 +23,7 @@ Lets Begin...
 - [Array Variables](#Array-Variables)
 - [While Loop](#While-Loop)
 
-<br>
+
 ## What is Automation 
 It a process by which we can complete any task with intervention or without human intervention.
 
