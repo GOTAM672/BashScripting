@@ -452,3 +452,20 @@ do
 done < hello.sh
 
 ```
+
+## Until Loop
+
+In until loop, commands are executed when conditions are false.
+
+```bash
+#! /bin/bash
+
+n=1
+
+until [ $n -ge 10 ]
+do
+   echo "$n"
+   n=$(( n+1 ))   # or (( n++ )) 
+   sleep 1        # It will print the number with one second delay.
+done
+
