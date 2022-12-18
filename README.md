@@ -585,3 +585,18 @@ do
 done
 
 ```
+
+### Select Loop
+
+It is similar to For Loop, it gives menu list to user to select.
+
+```bash
+
+#! /bin/bash
+
+select name in gautam suman himanshu anshu
+do
+    echo "$name selected"
+done
+
+```
