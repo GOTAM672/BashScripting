@@ -21,7 +21,7 @@ Lets Begin...
 - [Arithmetic Operation](#Arithmetic-Operation)
 - [Case Statement](#Case-Statement)
 - [Array Variables](#Array-Variables)
-- [While Loop](#Loops)
+- [Loops](#Loops)
 
 
 ## What is Automation 
@@ -515,6 +515,48 @@ do
     command1
     command2
     command3
+done
+
+```
+
+Examples 
+
+```bash
+#! /bin/bash
+
+for i in 1 2 3 4 5
+do
+    echo $i
+done
+
+```
+
+```bash
+#! /bin/bash
+
+for i in {1..10 }     # Iterate number 1 to 10
+do
+    echo $i
+done
+
+```
+
+```bash
+#! /bin/bash
+
+for (( i=0; i<5; i++ ))
+do
+    echo $i
+done
+
+```
+
+```bash
+#! /bin/bash
+
+for i in {1..10..1 }     # Iterate number 1 to 10 and increase the variable by 2 : {START..END..INCREMENT}
+do
+    echo $i
 done
 
 ```
