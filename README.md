@@ -21,7 +21,7 @@ Lets Begin...
 - [Arithmetic Operation](#Arithmetic-Operation)
 - [Case Statement](#Case-Statement)
 - [Array Variables](#Array-Variables)
-- [While Loop](#While-Loop)
+- [While Loop](#Loops)
 
 
 ## What is Automation 
@@ -393,8 +393,11 @@ OS[7]='kali'       # It's possible
 unset OS[2]        # remove element at index 2
 
 ```
+## Loops
 
-## While Loop
+In until loop, commands are executed when conditions are TRUE.
+
+### While Loop
 
 Example: Print 1 to 10
 ```bash
@@ -453,9 +456,9 @@ done < hello.sh
 
 ```
 
-## Until Loop
+### Until Loop
 
-In until loop, commands are executed when conditions are false.
+In until loop, commands are executed when conditions are FALSE.
 
 ```bash
 #! /bin/bash
@@ -469,3 +472,49 @@ do
    sleep 1        # It will print the number with one second delay.
 done
 
+```
+
+### For Loop
+
+Different Syntax of For Loop.
+
+```bash
+#! /bin/bash
+
+# Syntax 1---------------------------------------------------------------
+
+for VARIABLE in 1 2 3 4 5 .. N
+do
+    command1
+    command2
+    command3
+done
+
+# Syntax 2---------------------------------------------------------------
+
+for VARIABLE in file1 file2 file3
+do
+    command1
+    command2
+    command3
+done
+
+# Syntax 3---------------------------------------------------------------
+
+for OUTPUT in $(Linux or Unix Command Here...)
+do
+    command1
+    command2
+    command3
+done
+
+# Syntax 4---------------------------------------------------------------
+
+for (( EXP1; EXP2; EXP3 ))
+do
+    command1
+    command2
+    command3
+done
+
+```
