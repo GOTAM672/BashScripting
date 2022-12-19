@@ -636,3 +636,5 @@ do
 done
 
 ```
+
+## Functions
