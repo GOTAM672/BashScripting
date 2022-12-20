@@ -22,7 +22,8 @@ Lets Begin...
 - [Case Statement](#Case-Statement)
 - [Array Variables](#Array-Variables)
 - [Loops](#Loops)
-- [Break and Continue](#Break-and-Continue)
+- [Break and Continue](#Break-and-Continue)Functions
+- [Functions](#Functions)
 
 
 
@@ -638,3 +639,22 @@ done
 ```
 
 ## Functions
+
+Syntax of function.
+
+```bash
+#! /bin/bash
+
+# Syntax1------------------------------------------------------------
+
+function Add(){
+    Commands
+}
+
+# Syntax2------------------------------------------------------------
+
+Add(){
+    Commands
+}
+
+```
