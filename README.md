@@ -658,3 +658,23 @@ Add(){
 }
 
 ```
+
+Examples.
+
+```bash
+#! /bin/bash
+
+function Hello(){
+    echo "Hello, World"
+}
+
+quit(){
+    exit
+}
+
+# function call 
+
+Hello
+quit
+
+```
