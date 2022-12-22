@@ -678,3 +678,23 @@ Hello
 quit
 
 ```
+
+Argument Passing
+
+```bash
+#! /bin/bash
+
+function Print(){
+    echo $1 $2
+}
+
+quit(){
+    exit
+}
+
+# function call 
+
+Print Gotam Gorabh  # Here calling Print function with passing arguments
+quit
+
+```
