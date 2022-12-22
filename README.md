@@ -659,7 +659,27 @@ Add(){
 
 ```
 
-Examples.
+Argument Passing
+
+```bash
+#! /bin/bash
+
+function Print(){
+    echo $1 $2
+}
+
+quit(){
+    exit
+}
+
+# function call 
+
+Print Gotam Gorabh  # Here calling Print function with passing arguments
+quit
+
+```
+
+Example1
 
 ```bash
 #! /bin/bash
@@ -678,24 +698,29 @@ Hello
 quit
 
 ```
-
-Argument Passing
+Example2
 
 ```bash
 #! /bin/bash
 
-function Print(){
-    echo $1 $2
+usage(){
+  echo "You need to provide an argument : "
+  echo "usage : $0 file_name"
 }
 
-quit(){
-    exit
+is_file_exist() {
+  local file="$1"
+  [[ -f "$file" ]] && return 0 || return 1  
 }
 
-# function call 
+[[ $# -eq 0 ]] && usage
 
-Print Gotam Gorabh  # Here calling Print function with passing arguments
-quit
+if ( is_file_exist "$1")
+then
+  echo "File Found."
+else
+  echo "Not Found"
+fi
 
 ```
 
