@@ -698,3 +698,21 @@ Print Gotam Gorabh  # Here calling Print function with passing arguments
 quit
 
 ```
+
+### Local Variable
+
+```bash
+#! /bin/bash
+
+function Print(){
+    local Name=$1      # local Name variable
+    echo "My name is $Name"
+}
+
+Name="India"           # global Name variable 
+
+echo "The name is $Name"
+Print Gotam
+echo "The name is $Name"
+
+```
