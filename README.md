@@ -24,7 +24,7 @@ Lets Begin...
 - [Loops](#Loops)
 - [Break and Continue](#Break-and-Continue)Functions
 - [Functions](#Functions)
-
+- [Read Only Command](#Read-Only-Command)
 
 
 ## What is Automation 
@@ -739,5 +739,29 @@ Name="India"           # global Name variable
 echo "The name is $Name"
 Print Gotam
 echo "The name is $Name"
+
+```
+
+## Read Only Command
+
+```bash
+#! /bin/bash
+
+var=31
+readonly var     # makes var readonly
+
+var=50           # give warning but doesn't assign it.
+
+echo "var => $var"
+
+
+hello () {
+  echo "Hello, World!"
+}
+
+readonly -f hello   # make hello readonly.
+
+readonly      # gives list of readonly built-in variables.
+readonly -f   # gives list of readonly funcyions.
 
 ```
