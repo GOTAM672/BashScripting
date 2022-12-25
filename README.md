@@ -25,6 +25,7 @@ Lets Begin...
 - [Break and Continue](#Break-and-Continue)Functions
 - [Functions](#Functions)
 - [Read Only Command](#Read-Only-Command)
+- [Signals and Traps](#Signals-and-Traps)
 
 
 ## What is Automation 
@@ -763,5 +764,16 @@ readonly -f hello   # make hello readonly.
 
 readonly      # gives list of readonly built-in variables.
 readonly -f   # gives list of readonly funcyions.
+
+```
+
+## Signals and Traps
+
+
+
+```bash
+#! /bin/bash
+
+To be documented........
 
 ```
